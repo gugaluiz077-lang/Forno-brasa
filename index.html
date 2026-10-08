@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Pizzaria artesanal com forno a lenha, massa de fermentação natural e pedido online direto pelo WhatsApp">
+        <title>Forno & Brasa</title>
+    <link rel="icon" href="favicon-32x32(1).png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        <header>
+           <div class="logo">Forno <span>& Brasa</span></div>
+           <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+            <nav>
+                <a href="#cardapio">Cardapio</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#localizacao">Localização</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </header>
+
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Sabor de forno a lenha, <br>direto pra sua mesa</h1>
+                <p>Pizzas artesanais, massa de fermentação natural e o cuidado de quem também gosta de sentar à mesa pra comer.</p>
+                <a class="btn" href="#cardapio">Ver cardapio</a>
+            </div>
+        </section>
+
+        <section id="cardapio">
+            <h2>Cardapio</h2>
+            <div class="filtros">
+                <button class="filtro-btn ativo" data-filtro="pizza">Pizzas</button>
+                <button class="filtro-btn" data-filtro="bebida">Bebidas</button>
+                <button class="filtro-btn" data-filtro="sobremesa">Sobremesas</button>
+            </div>
+
+<div class="resumo-pedido">
+    <span id="contador">0 itens no pedido</span>
+    <button id="btn-finalizar" class="btn">Finalizar pedido no WhatsApp</button>
+</div>
+
+            <div class="cards">
+                <div class="card" data-categoria="pizza" data-nome="Margherita" data-preco="42">
+                    <h3>Margherita</h3>
+                    <p>Molho de tomate, mussarela de búfala, manjericão fresco</p>
+                    <span class="preco">R$ 42</span>
+                    <button class="btn-adicionar">Adicionar</button>
+                </div>
+
+                <div class="card" data-categoria="pizza" data-nome="Calabresa Especial" data-preco="45">
+                    <h3>Calabresa Especial</h3>
+                    <p>Calabresa artesanal, cebola roxa, azeitonas pretas</p>
+                    <span class="preco">R$ 45</span>
+                     <button class="btn-adicionar">Adicionar</button>
+                </div>
+
+                <div class="card" data-categoria="pizza" data-nome="Quatro Queijos" data-preco="48">
+                    <h3>Quatro Queijos</h3>
+                    <p>Mussarela, gorgonzola, parmesão e catupiry</p>
+                    <span class="preco">R$ 48</span>
+                     <button class="btn-adicionar">Adicionar</button>
+                </div>
+
+                <div class="card" data-categoria="bebida" data-nome="Suco Natual" data-preco="10">
+                    <h3>Suco Natural (laranja/limão)</h3>
+                    <p>Feito na hora, sem açúcar adicionado</p>
+                    <span class="preco">R$ 10</span>
+                     <button class="btn-adicionar">Adicionar</button>
+                </div>
+
+                <div class="card" data-categoria="bebida" data-nome="Refrigerante lata" data-preco="7">
+                    <h3>Refrigerante lata</h3>
+                    <p>Coca-Cola, Guaraná ou Sprite</p>
+                    <span class="preco">R$ 7</span>
+                     <button class="btn-adicionar">Adicionar</button>
+                </div>
+
+                <div class="card" data-categoria="bebida" data-nome="Agua com gás" data-preco="5">
+                    <h3>Agua com gás</h3>
+                    <p>500ml</p>
+                    <span class="preco">R$ 5</span>
+                     <button class="btn-adicionar">Adicionar</button>
+                </div>
+
+                <div class="card" data-categoria="sobremesa" data-nome="Petit Gateau" data-preco="22">
+                    <h3>Petit Gateau</h3>
+                    <p>Bolo de chocolate quente com sorvete de creme</p>
+                    <span class="preco">R$ 22</span>
+                     <button class="btn-adicionar">Adicionar</button>
+                </div>
+
+                <div class="card" data-categoria="sobremesa" data-nome="Tiramisu" data-preco="18">
+                    <h3>Tiramisù</h3>
+                    <p>Receita tradicional italiana, feita na casa</p>
+                    <span class="preco">R$ 18</span>
+                     <button class="btn-adicionar">Adicionar</button>
+                </div>
+
+                <div class="card" data-categoria="sobremesa" data-nome="Pudim de leite" data-preco="14">
+                    <h3>Pudim de Leite</h3>
+                    <p>Clássico, com calda de caramelo</p>
+                    <span class="preco">R$ 14</span>
+                     <button class="btn-adicionar">Adicionar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>O <span class="destaque">Forno</span> & <span class="destaque">Brasa</span> nasceu em 2018 do sonho de uma família apaixonada por pizza napolitana. Usamos forno a lenha, ingredientes <br> selecionados e uma massa de fermentação natural de 48 horas. Cada pizza é feita na hora, com o cuidado de quem também vai sentar à mesa pra comer.</p>
+        </section>
+
+        <section id="localizacao">
+            <h2>Localização</h2>
+            <p>Endereço: Rua das Palmeiras, 320 — Bairro Vila Nova.</p>
+            <ul>
+                <li>Segunda a quinta: 18h às 23h</li>
+                <li>Sexta e sábado: 18h às 00h</li>
+                <li>Domingo: 18h às 22h</li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <a href="https://wa.me/558494639734?text=Ola,%20Gostaria%20de%20Fazer%20um%20pedido" target="_blank" class="btn">Faça seu pedido</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Forno & Brasa — Todos os direitos reservados</p>
+        </footer>
+
+        <script src="Script.js"></script>
+    </body>
+</html>
